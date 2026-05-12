@@ -47,7 +47,7 @@ Open browser and go to:
 
 ---
 
-📁 Project Structure
+#📁 Project Structure
 
 EduFocus/
 ├── app.py
