@@ -1,81 +1,45 @@
-
-
-```markdown
 # EduFocus: Classroom Attention Monitoring System
 
 **A Real-Time, Privacy-Preserving Student Attention Analysis System using Deep Learning**
 
-![Python](https://img.shields.io/badge/Python-3.13-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.11-orange)
-![Flask](https://img.shields.io/badge/Flask-Web%20App-green)
 
 ---
 
 ## 📋 Overview
 
-**EduFocus** is an AI-powered system that helps teachers monitor student attention levels in real-time during classroom lectures. It analyzes video from a single classroom camera while ensuring complete student privacy through face blurring.
+EduFocus is an AI-powered system that monitors student attention levels in real-time using a single classroom camera while ensuring complete privacy.
 
 ### Key Features
 - Real-time attention classification (Focused / Moderately Attentive / Distracted)
 - Zone-wise Attention Heatmap (Front, Middle, Back)
 - Temporal Attention Curve
-- Automatic Gaussian Face Blurring for privacy
-- Live Flask Web Dashboard with MJPEG streaming
-- Automated PDF report generation
+- Automatic Gaussian Face Blurring
+- Live Flask Web Dashboard
+- Automated PDF Reports
 
 ---
 
 ## 🛠️ Tech Stack
-
-- **Language**: Python 3.13
-- **Deep Learning**: PyTorch, MobileNetV2, LSTM
-- **Computer Vision**: OpenCV
-- **Web Framework**: Flask
-- **Report Generation**: ReportLab
+- Python 3.13
+- PyTorch + MobileNetV2 + LSTM
+- OpenCV
+- Flask
+- ReportLab
 
 ---
 
 ## 🚀 How to Run
+```bash
+git clone https://github.com/Aparna-rh/EduFocus.git
+cd EduFocus
+pip install -r requirements.txt
+python app.py
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Aparna-rh/EduFocus.git
-   cd EduFocus
-   ```
+Open browser → http://localhost:5000
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+📊 Highlights
 
-3. Run the application:
-   ```bash
-   python app.py
-   ```
-
-4. Open browser → Go to `http://localhost:5000`
-
----
-
-## 📊 Highlights
-
-- Real-time performance: **15–18 FPS** on standard CPU laptop
-- Strong privacy protection
-- Zone-wise + Temporal analysis
-- Fully offline system
-
----
-
-## 📁 Project Structure
-
-```
-EduFocus/
-├── app.py
-├── models.py
-├── utils.py
-├── train_model.py
-├── requirements.txt
-├── static/
-├── templates/
-└── outputs/
-```
+15–18 FPS on CPU-only laptop
+Strong privacy protection
+Zone-wise & Temporal analysis
+Aligned with SDG 4: Quality Education
