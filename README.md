@@ -1,27 +1,34 @@
+````markdown
 # EduFocus: Classroom Attention Monitoring System
 
-**A Real-Time, Privacy-Preserving Student Attention Analysis System using Deep Learning**
+A Real-Time, Privacy-Preserving Student Attention Analysis System using Deep Learning
 
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.11-orange)
+![Flask](https://img.shields.io/badge/Flask-Web%20App-green)
 
 ---
 
 ## 📋 Overview
 
-EduFocus is an AI-powered system that monitors student attention levels in real-time using a single classroom camera while ensuring complete privacy.
+EduFocus is an AI-powered system that monitors student attention levels in real time during classroom lectures using computer vision and deep learning while preserving privacy through face blurring.
 
-### Key Features
-- Real-time attention classification (Focused / Moderately Attentive / Distracted)
-- Zone-wise Attention Heatmap (Front, Middle, Back)
-- Temporal Attention Curve
-- Automatic Gaussian Face Blurring
-- Live Flask Web Dashboard
-- Automated PDF Reports
+### Features
+- Real-time attention classification
+- Face blurring for privacy protection
+- Zone-wise classroom attention analysis
+- Temporal attention monitoring
+- Live Flask dashboard
+- Automated PDF report generation
 
 ---
 
 ## 🛠️ Tech Stack
+
 - Python 3.13
-- PyTorch + MobileNetV2 + LSTM
+- PyTorch
+- MobileNetV2
+- LSTM
 - OpenCV
 - Flask
 - ReportLab
@@ -29,17 +36,46 @@ EduFocus is an AI-powered system that monitors student attention levels in real-
 ---
 
 ## 🚀 How to Run
+
 ```bash
 git clone https://github.com/Aparna-rh/EduFocus.git
 cd EduFocus
 pip install -r requirements.txt
 python app.py
+````
 
-Open browser → http://localhost:5000
+Open browser and go to:
 
-📊 Highlights
+```bash
+http://localhost:5000
+```
 
-15–18 FPS on CPU-only laptop
-Strong privacy protection
-Zone-wise & Temporal analysis
-Aligned with SDG 4: Quality Education
+---
+
+## 📁 Project Structure
+
+```bash
+EduFocus/
+├── app.py
+├── train_model.py
+├── models.py
+├── utils.py
+├── requirements.txt
+├── static/
+├── templates/
+└── outputs/
+```
+
+---
+
+## 📊 Highlights
+
+* Real-time performance on CPU
+* Privacy-preserving system
+* Fully offline processing
+* Deep learning based analysis
+
+---
+
+
+
