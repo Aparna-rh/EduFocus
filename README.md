@@ -50,7 +50,6 @@ Open browser and go to:
 📁 Project Structure
 
 EduFocus/
-│
 ├── app.py
 ├── train_model.py
 ├── models.py
