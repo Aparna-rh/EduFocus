@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduFocus - Classroom Attention System</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>EduFocus: Privacy-Aware Classroom Attention Monitor</h1>
+    <div class="container">
+        <img src="{{ url_for('video_feed') }}" width="800" height="500">
+        <div class="sidebar">
+            <h2>Live Metrics</h2>
+            <p id="avg">Class Attention: {{ avg }}%</p>
+            <h3>Zone Breakdown</h3>
+            <p>
+    Front: {{ front }}% |
+    Middle: {{ middle }}% |
+    Back: {{ back }}%
+</p>
+            <button onclick="window.location='/report'">Download Full Report (PDF)</button>
+        </div>
+    </div>
+   
+</body>
+</html>

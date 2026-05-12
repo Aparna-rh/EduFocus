@@ -1,0 +1,4 @@
+body { font-family: Arial; background: #f4f4f9; text-align: center; }
+.container { display: flex; justify-content: center; gap: 30px; }
+.sidebar { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 300px; }
+button { padding: 12px 24px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
